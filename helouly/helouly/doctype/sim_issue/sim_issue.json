@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{operator}-{imse}",
+ "creation": "2023-09-20 15:54:32.412258",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operator",
+  "customer",
+  "cost_center",
+  "column_break_cujdv",
+  "imse",
+  "sim_type",
+  "sim_number",
+  "column_break_liefn",
+  "sim_card_service",
+  "sku",
+  "project",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Operator",
+   "options": "Supplier",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "no_copy": 1,
+   "options": "Customer"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "no_copy": 1,
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_cujdv",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "imse",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "IMSE",
+   "no_copy": 1,
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sim_type",
+   "fieldtype": "Select",
+   "label": "SIM Type",
+   "options": "Data\nVoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sim_number",
+   "fieldtype": "Data",
+   "label": "SIM Number",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_liefn",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "SKU",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "no_copy": 1,
+   "options": "Project"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIM Issue",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIM Issue",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "sim_card_service",
+   "fieldtype": "Link",
+   "label": "SIM Card Service",
+   "no_copy": 1,
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-20 16:00:10.270312",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "SIM Issue",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

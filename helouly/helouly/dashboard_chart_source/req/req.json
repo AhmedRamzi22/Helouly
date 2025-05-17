@@ -1,0 +1,13 @@
+{
+ "creation": "2024-10-13 02:07:22.106700",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2024-10-13 02:07:22.106700",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "req",
+ "owner": "Administrator",
+ "source_name": "req",
+ "timeseries": 0
+}

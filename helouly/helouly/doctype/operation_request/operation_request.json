@@ -1,0 +1,360 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-17 13:49:26.635107",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "operation_request",
+  "status",
+  "project",
+  "party",
+  "party_type",
+  "column_break_pow8k",
+  "company",
+  "sales_partner",
+  "cost_center",
+  "posting_date",
+  "opportunity",
+  "contract_period_section",
+  "contract_duration",
+  "total_date",
+  "invoicing_periodicity",
+  "column_break_euhwq",
+  "contract_start_date",
+  "contract_end_date",
+  "auto_renewal",
+  "monthly_subscription_tab",
+  "monthly_subscription",
+  "monthly_subscription_total",
+  "voice_section",
+  "voices",
+  "voices_subscription",
+  "voices_total",
+  "devices_tab",
+  "devices",
+  "devices_total",
+  "non_recurring_charges_tab",
+  "non_recurring_charges_contract",
+  "non_recurring_charges_total",
+  "items_net_totals_detailes_tab",
+  "items_details_contract",
+  "section_break_pfssw",
+  "notes",
+  "connections_tab",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "operation_request",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Request Form No.",
+   "options": "Operation Request"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nSubmited"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_pow8k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_period_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Period"
+  },
+  {
+   "fieldname": "contract_duration",
+   "fieldtype": "Select",
+   "label": "Contract Duration",
+   "options": "Yearly\nMonthly"
+  },
+  {
+   "fieldname": "total_date",
+   "fieldtype": "Int",
+   "label": "Total Of Month / Year",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Monthly",
+   "fieldname": "invoicing_periodicity",
+   "fieldtype": "Select",
+   "label": "Invoicing Periodicity",
+   "options": "Monthly",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_euhwq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "label": "Contract Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_renewal",
+   "fieldtype": "Check",
+   "label": "Auto Renewal"
+  },
+  {
+   "fieldname": "monthly_subscription_tab",
+   "fieldtype": "Tab Break",
+   "label": "Subscription"
+  },
+  {
+   "fieldname": "monthly_subscription",
+   "fieldtype": "Table",
+   "label": "Monthly Subscription",
+   "options": "Monthly Subscription Contract"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "monthly_subscription_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voice_section",
+   "fieldtype": "Section Break",
+   "label": "Voices",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "voices",
+   "fieldtype": "Table",
+   "label": "Voices",
+   "options": "Voices Items"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "voices_subscription",
+   "fieldtype": "Table",
+   "label": "Voices Subscription",
+   "no_copy": 1,
+   "options": "Voices Subscription Contract",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "voices_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "devices_tab",
+   "fieldtype": "Tab Break",
+   "label": "Devices"
+  },
+  {
+   "fieldname": "devices",
+   "fieldtype": "Table",
+   "label": "Devices",
+   "options": "Contract Devices"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "devices_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "non_recurring_charges_tab",
+   "fieldtype": "Tab Break",
+   "label": "Non-Recurring Charges"
+  },
+  {
+   "fieldname": "non_recurring_charges_contract",
+   "fieldtype": "Table",
+   "label": "Non-Recurring Charges Contract",
+   "options": "Non-Recurring Charges Contract"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "non_recurring_charges_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items_net_totals_detailes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items Net Totals Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "items_details_contract",
+   "fieldtype": "Table",
+   "label": "Items Details",
+   "no_copy": 1,
+   "options": "Items Details Contract",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pfssw",
+   "fieldtype": "Tab Break",
+   "label": "Terms"
+  },
+  {
+   "default": " ",
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Operation Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "label": "Party",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fetch_if_empty": 1,
+   "fieldname": "party_type",
+   "fieldtype": "Dynamic Link",
+   "label": "Party Type",
+   "options": "party",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opportunity",
+   "fieldtype": "Link",
+   "label": "Opportunity",
+   "options": "Opportunity",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Operation Contract",
+   "link_fieldname": "operation_request"
+  }
+ ],
+ "modified": "2023-09-20 12:03:05.962611",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Operation Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Open"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1
+}

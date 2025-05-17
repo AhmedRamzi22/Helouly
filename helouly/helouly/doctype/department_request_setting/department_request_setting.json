@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-10 19:36:15.899029",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "notifications_section",
+  "user"
+ ],
+ "fields": [
+  {
+   "description": "This user will notify for all request between departments",
+   "fieldname": "user",
+   "fieldtype": "Table",
+   "label": "User",
+   "options": "Department Request Notify User"
+  },
+  {
+   "fieldname": "notifications_section",
+   "fieldtype": "Section Break",
+   "label": "Notifications"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-10 19:38:11.128664",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Department Request Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

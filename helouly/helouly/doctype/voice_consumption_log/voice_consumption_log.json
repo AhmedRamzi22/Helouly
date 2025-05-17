@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VCL-{####}",
+ "creation": "2023-09-11 10:59:19.551644",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation_contract",
+  "invoice_date",
+  "voice",
+  "voices_subscription_row_name",
+  "invoices_schedual_row_name",
+  "column_break_mfcsg",
+  "invoice_log",
+  "invoice_current_amount",
+  "consumption_amount",
+  "invoice_new_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation_contract",
+   "fieldtype": "Link",
+   "label": "Operation Contract",
+   "options": "Operation Contract",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voice",
+   "fieldtype": "Link",
+   "label": "Voice",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voices_subscription_row_name",
+   "fieldtype": "Data",
+   "label": "Voices Subscription Row Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoices_schedual_row_name",
+   "fieldtype": "Data",
+   "label": "Invoices Schedual Row Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_current_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice Current Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_new_amount",
+   "fieldtype": "Data",
+   "label": "Invoice New Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "consumption_amount",
+   "fieldtype": "Currency",
+   "label": "Consumption Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mfcsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_log",
+   "fieldtype": "Link",
+   "label": "Invoice Log",
+   "options": "Invoice Log",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-14 14:48:17.521583",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Voice Consumption Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

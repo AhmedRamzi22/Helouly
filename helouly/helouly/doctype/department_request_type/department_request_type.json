@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:request_type",
+ "creation": "2024-10-08 22:39:15.038545",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_category",
+  "request_type",
+  "column_break_bzfq",
+  "time",
+  "department",
+  "column_break_fmxv",
+  "employee",
+  "section_break_f4l71",
+  "required_attachments",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_category",
+   "fieldtype": "Select",
+   "label": "Request Category",
+   "options": "\nComplain\nRequest\nInquiry"
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Dept.",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Head of Dept.",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_f4l71",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "required_attachments",
+   "fieldtype": "Table",
+   "label": "Required Attachments",
+   "options": "Required Attachment"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Text Editor",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_bzfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fmxv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2024-10-08 22:40:49.841559",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Department Request Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "translated_doctype": 1
+}

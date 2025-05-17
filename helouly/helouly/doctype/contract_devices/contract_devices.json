@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-28 13:34:25.777111",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "column_break_lne4i",
+  "item_group",
+  "qty",
+  "section_break_pwsk0",
+  "description",
+  "section_break_agaim",
+  "price",
+  "vat",
+  "vat_rate",
+  "column_break_dnujp",
+  "total",
+  "total_including_vat",
+  "is_free_item",
+  "invoiced_amount",
+  "acceptance_status",
+  "acceptance_start_from"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lne4i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "item.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "QTY",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pwsk0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item.description",
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_agaim",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "vat",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "VAT",
+   "options": "Item Tax Template",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dnujp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_including_vat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Including VAT",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acceptance_status",
+   "fieldtype": "Check",
+   "label": "Acceptance Status"
+  },
+  {
+   "depends_on": "acceptance_status",
+   "fieldname": "acceptance_start_from",
+   "fieldtype": "Date",
+   "label": "Acceptance Start From"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "is_free_item",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Free Item"
+  },
+  {
+   "fieldname": "vat_rate",
+   "fieldtype": "Percent",
+   "label": "VAT Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoiced_amount",
+   "fieldtype": "Currency",
+   "label": "Invoiced Amount",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-10 14:15:41.512726",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Contract Devices",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,101 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"2ictYf7hZK\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Department Requests</span>\",\"col\":12}},{\"id\":\"0gYOF9dUPm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department Request Form\",\"col\":4}},{\"id\":\"bRfJO-nwxA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department Request Type\",\"col\":4}},{\"id\":\"s9atCci05Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department Request Setting\",\"col\":4}},{\"id\":\"8Pwt7-S_DS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department Request Status\",\"col\":3}},{\"id\":\"S3DtIWc8e5\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"w_Cs98ip3t\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>My Requests</b></span>\",\"col\":12}},{\"id\":\"y5U6DX5Nwy\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Request (Mine)\",\"col\":4}},{\"id\":\"3v3aM0l_a3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Under Processing Request (Mine)\",\"col\":4}},{\"id\":\"a6RhbDMtjr\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Overdue Request(Mine)\",\"col\":4}},{\"id\":\"1QN22rS37V\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Resolved Request (mine)\",\"col\":4}},{\"id\":\"Ezp9jaZZUE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Closed Request (mine)\",\"col\":4}},{\"id\":\"4BhB-ok4PP\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EmCt9yI9t-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>My Tasks</b></span>\",\"col\":12}},{\"id\":\"Sl6s0bwgek\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Request\",\"col\":4}},{\"id\":\"wcG3EzAAZv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Under Processing Request\",\"col\":4}},{\"id\":\"Apj-Kde4xx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Overdue Request\",\"col\":4}},{\"id\":\"7b9xEuq9kU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Resolved Request\",\"col\":4}},{\"id\":\"svqQRv7r72\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Closed Request\",\"col\":4}}]",
+ "creation": "2024-10-10 17:01:28.910759",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "file-large",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Department Requests",
+ "links": [],
+ "modified": "2024-10-13 21:16:35.567118",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Department Requests",
+ "number_cards": [
+  {
+   "label": "Open Request (Mine)",
+   "number_card_name": "My Open Request"
+  },
+  {
+   "label": "Overdue Request(Mine)",
+   "number_card_name": "My Overdue Request"
+  },
+  {
+   "label": "Open Request",
+   "number_card_name": "Open Request"
+  },
+  {
+   "label": "Under Processing Request",
+   "number_card_name": "Under Processing Request"
+  },
+  {
+   "label": "Under Processing Request (Mine)",
+   "number_card_name": "My Under Processing Request"
+  },
+  {
+   "label": "Resolved Request (mine)",
+   "number_card_name": "My Resolved Request"
+  },
+  {
+   "label": "Overdue Request",
+   "number_card_name": "Overdue Request"
+  },
+  {
+   "label": "Closed Request (mine)",
+   "number_card_name": "My Closed Request"
+  },
+  {
+   "label": "Resolved Request",
+   "number_card_name": "Resolved Request"
+  },
+  {
+   "label": "Closed Request",
+   "number_card_name": "Closed Request"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Department Request Setting",
+   "link_to": "Department Request Setting",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Department Request Form",
+   "link_to": "Department Request Form",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Department Request Status",
+   "link_to": "Department Request Status",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Department Request Type",
+   "link_to": "Department Request Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Department Requests"
+}

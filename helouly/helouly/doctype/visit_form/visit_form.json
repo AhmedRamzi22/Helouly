@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VF.#",
+ "creation": "2024-10-07 14:09:58.760589",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_visit_form",
+  "naming_series",
+  "lead_name",
+  "column_break_piff",
+  "opportunity",
+  "partner_name",
+  "column_break_aeut",
+  "team_leader",
+  "contact_reason",
+  "section_break_rtqqt",
+  "status",
+  "custom_contact_no",
+  "custom_reachability",
+  "column_break_cat3v",
+  "custom_visit_start_time",
+  "custom_visit_end_time",
+  "custom_communication_type",
+  "visit_transactions_section",
+  "visit_with_leader",
+  "column_break_jdydd",
+  "right_contact_person",
+  "custom_interest_products",
+  "custom_interest_status",
+  "custom_operators",
+  "column_break_ag8x8",
+  "custom_opportunity_product_type",
+  "custom_opportunity_product",
+  "custom_notes",
+  "custom_visit_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_visit_form",
+   "fieldtype": "Tab Break",
+   "label": "Visit Form"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "VF.#"
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "opportunity",
+   "fieldtype": "Link",
+   "label": "Opportunity",
+   "options": "Opportunity"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Partner",
+   "options": "Sales Partner",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "partner_name.team_leader",
+   "fieldname": "team_leader",
+   "fieldtype": "Data",
+   "label": "Team Leader",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rtqqt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "New Lead Or Existing Already ?",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Lead\nOpen\nReplied\nOpportunity\nQuotation\nLost Quotation\nInterested\nConverted\nDo Not Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "custom_reachability",
+   "fieldtype": "Select",
+   "label": "Reachability",
+   "options": "\nReached\nUnreached"
+  },
+  {
+   "fieldname": "column_break_cat3v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_visit_start_time",
+   "fieldtype": "Datetime",
+   "label": "Visit Start Time"
+  },
+  {
+   "fieldname": "custom_visit_end_time",
+   "fieldtype": "Datetime",
+   "label": "Visit End Time"
+  },
+  {
+   "fieldname": "custom_communication_type",
+   "fieldtype": "Select",
+   "label": "Communication Type",
+   "options": "\nSite Visit\nPhone Call"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "visit_transactions_section",
+   "fieldtype": "Section Break",
+   "label": "Visit Transactions"
+  },
+  {
+   "fieldname": "visit_with_leader",
+   "fieldtype": "Select",
+   "label": "Visit With Leader",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_jdydd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Right contact person? (For New Leads Only) ",
+   "fieldname": "right_contact_person",
+   "fieldtype": "Select",
+   "label": "Right contact person",
+   "options": "\nYes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "custom_interest_products",
+   "fieldtype": "Section Break",
+   "label": "Interest Products"
+  },
+  {
+   "fieldname": "custom_interest_status",
+   "fieldtype": "Select",
+   "label": "Interest Status",
+   "options": "\nWill Think\nInterested\nNot interested"
+  },
+  {
+   "fieldname": "custom_operators",
+   "fieldtype": "Link",
+   "label": "Operators",
+   "options": "Operators"
+  },
+  {
+   "fieldname": "column_break_ag8x8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_opportunity_product_type",
+   "fieldtype": "Link",
+   "label": "Opportunity Product Type",
+   "options": "Opportunity Product Type"
+  },
+  {
+   "fieldname": "custom_opportunity_product",
+   "fieldtype": "Link",
+   "label": "Opportunity Product",
+   "options": "Opportunity Product"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "custom_notes",
+   "fieldtype": "Section Break",
+   "label": "Visit Notes"
+  },
+  {
+   "fieldname": "custom_visit_notes",
+   "fieldtype": "Text Editor",
+   "label": "Visit Notes"
+  },
+  {
+   "fieldname": "column_break_piff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aeut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_reason",
+   "fieldtype": "Select",
+   "label": "Contact Reason",
+   "options": "Cold Calling\nNew Customer\nFollowing up\nInquiry\nComplain"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-12 01:44:57.793011",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Visit Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

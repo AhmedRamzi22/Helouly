@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-28 15:38:26.676483",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachment_name",
+  "attach"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach",
+   "mandatory_depends_on": "eval: doc.parenttype ==  \"Department Request Form\"",
+   "read_only_depends_on": "eval: doc.parenttype ==  \"Department Request Type\""
+  },
+  {
+   "fieldname": "attachment_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attachment Name",
+   "options": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-28 17:01:13.945746",
+ "modified_by": "Administrator",
+ "module": "Helouly",
+ "name": "Required Attachment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
